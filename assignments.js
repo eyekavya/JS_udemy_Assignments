@@ -28,7 +28,6 @@ const description =
   "Portugal is in Europe, and its 11 million people speak portuguese";
 
 const descriptionNew = `Portugal is in Europe, and its 11 million people speak portuguese`;
-
 // population = 13000000;
 
 if (population > 33000000) {
