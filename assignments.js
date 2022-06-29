@@ -1,4 +1,4 @@
-const country = "India";
+/*const country = "India";
 const continent = "Asia";
 let population = 100000000;
 console.log(country);
@@ -10,11 +10,11 @@ const language = "Hindi";
 console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
-console.log(typeof typeof language);
+console.log(typeof typeof language);*/
 
 // language = "English";
 
-const halfPopulation = population / 2;
+/*const halfPopulation = population / 2;
 console.log(halfPopulation);
 console.log(++population);
 
@@ -27,11 +27,11 @@ console.log(population < avgPopulation);
 const description =
   "Portugal is in Europe, and its 11 million people speak portuguese";
 
-const descriptionNew = `Portugal is in Europe, and its 11 million people speak portuguese`;
+const descriptionNew = `Portugal is in Europe, and its 11 million people speak portuguese`;*/
 
 // population = 13000000;
 
-if (population > 33000000) {
+/*if (population > 33000000) {
   console.log(`India's population is above average`);
 } else {
   console.log(
@@ -39,15 +39,15 @@ if (population > 33000000) {
       (population - 33000000) / 1000000
     } million bellow average`
   );
-}
+}*/
 
-console.log(
+/*console.log(
   "9" - "5",
   "19" - "13" + "17",
   "19" - "13" + 17,
   "123" < 57,
   5 + 6 + "4" + 9 - 4 - 2
-);
+);*/
 
 // const numNeighbours = Number(
 //   prompt("How many neighbour countries does your country have?")
@@ -58,7 +58,7 @@ console.log(
 
 // population = 10000;
 
-if (language === "English" && population < 5000000 && isIsland === false)
+/*if (language === "English" && population < 5000000 && isIsland === false)
   console.log("You should live in India :)");
 else console.log("India does not meet your criteria:(");
 
@@ -81,11 +81,22 @@ switch (language) {
   default:
     console.log("Great language too :D");
     break;
-}
+}*/
 
-console.log(
+/*console.log(
   (averagePopulation =
     population > 33000000
       ? `India's population is above average`
       : `India's population is below average`)
-);
+);*/
+
+function describeCountry(country, population, capitalCity) {
+  return `${country} has ${population} million people and its
+  capital city is ${capitalCity}`;
+}
+
+const describeIndia = describeCountry("India", 1393, "New Delhi");
+const describeFinland = describeCountry("Finland", 6, "Helsinki");
+const describeChina = describeCountry("China", 1441, "Beijing");
+
+console.log(describeIndia, describeFinland, describeChina);
