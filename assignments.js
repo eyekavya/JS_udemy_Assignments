@@ -61,3 +61,24 @@ console.log(
 if (language === "English" && population < 5000000 && isIsland === false)
   console.log("You should live in India :)");
 else console.log("India does not meet your criteria:(");
+
+switch (language) {
+  case "Chinese" || "Mandarin":
+    console.log("MOST number of native speakers!");
+    break;
+  case "Spanish":
+    console.log("2nd place in number of native speakers");
+    break;
+  case "English":
+    console.log("3rd place");
+    break;
+  case "Hindi":
+    console.log("Number 4");
+    break;
+  case "Arabic":
+    console.log("5th most spoken language");
+    break;
+  default:
+    console.log("Great language too :D");
+    break;
+}
