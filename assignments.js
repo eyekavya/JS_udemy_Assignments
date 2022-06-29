@@ -82,3 +82,10 @@ switch (language) {
     console.log("Great language too :D");
     break;
 }
+
+console.log(
+  (averagePopulation =
+    population > 33000000
+      ? `India's population is above average`
+      : `India's population is below average`)
+);
