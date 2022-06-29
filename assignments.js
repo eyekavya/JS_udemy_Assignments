@@ -55,3 +55,9 @@ console.log(
 // if (numNeighbours === 1) console.log("Only 1 border!");
 // else if (numNeighbours > 1) console.log("More than 1 border");
 // else console.log("No borders");
+
+// population = 10000;
+
+if (language === "English" && population < 5000000 && isIsland === false)
+  console.log("You should live in India :)");
+else console.log("India does not meet your criteria:(");
