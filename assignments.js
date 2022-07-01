@@ -100,3 +100,18 @@ const describeFinland = describeCountry("Finland", 6, "Helsinki");
 const describeChina = describeCountry("China", 1441, "Beijing");
 
 console.log(describeIndia, describeFinland, describeChina);
+
+const funKavya = (a, b) => console.log(a, b);
+
+function percentageOfWorld1(population) {
+  return population / 79;
+}
+
+const perChina = percentageOfWorld1(1441);
+const perIndia = percentageOfWorld1(1406);
+const perUsa = percentageOfWorld1(334);
+console.log(perChina, perIndia, perUsa);
+
+const percentageOfWorld2 = function (population) {
+  return population / 79;
+};
