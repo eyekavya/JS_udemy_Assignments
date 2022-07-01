@@ -115,3 +115,24 @@ console.log(perChina, perIndia, perUsa);
 const percentageOfWorld2 = function (population) {
   return population / 79;
 };
+
+const perChina2 = percentageOfWorld2(1441);
+const perIndia2 = percentageOfWorld2(1406);
+const perUsa2 = percentageOfWorld2(334);
+console.log(perChina2, perIndia2, perUsa2);
+
+const percentageOfWorld3 = (population) => population / 79;
+const perChina3 = percentageOfWorld3(1441);
+const perIndia3 = percentageOfWorld3(1406);
+const perUsa3 = percentageOfWorld3(334);
+console.log(perChina3, perIndia3, perUsa3);
+
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld1(population);
+  return `${country} has ${population} million people, which is about ${percentage}% of the world.`;
+}
+console.log(
+  describePopulation("India", 1406),
+  describePopulation("China", 1441),
+  describePopulation("USA", 334)
+);
