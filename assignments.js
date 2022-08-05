@@ -136,3 +136,63 @@ console.log(
   describePopulation("China", 1441),
   describePopulation("USA", 334)
 );
+
+const populations = [1.39, 3, 0.22, 0.5];
+console.log(populations);
+
+console.log(populations.length === 4 ? true : false);
+
+const percentages = [];
+
+for (let i = 0; i < populations.length; i++) {
+  percentages.push(percentageOfWorld1(populations[i] * 1000));
+}
+console.log(percentages);
+const neighbours = ["Nepal", "China", "Bangladesh", "Srilanka"];
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (neighbours.includes("Germany")) console.log("Germany included");
+else console.log("Germany not included");
+
+if (neighbours.includes("Germany") === false)
+  console.log("Probably not a central European country :D");
+
+neighbours[neighbours.indexOf("China")] = "Bhutan";
+console.log(neighbours);
+
+const myCountry = {
+  country: "India",
+  capital: "New Delhi",
+  language: "Hindi",
+  population: 139,
+  neighbours: ["Nepal", "China", "Bangladesh", "Srilanka"],
+  describe: function () {
+    return console.log(
+      `${this.country} has ${this.population} million ${this.language}-speaking people;${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+    );
+  },
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length > 0 ? false : true;
+  },
+};
+myCountry.checkIsland();
+
+console.log(myCountry);
+
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people;${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+);
+
+console.log(myCountry.population + 2);
+
+console.log(myCountry.population - 2);
+
+myCountry.describe();
+
+for (let voter = 1; voter <= 50; voter++) {
+  console.log(`Voter number ${voter} is currently voting`);
+}
