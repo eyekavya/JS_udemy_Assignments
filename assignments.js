@@ -146,6 +146,16 @@ for (let i = 0; i < populations.length; i++) {
 }
 console.log(percentages2);
 
+const percentages3 = [];
+
+let i = 0;
+while (i < populations.length) {
+  percentages3.push(percentageOfWorld1(populations[i]));
+  i++;
+}
+
+console.log(percentages3);
+
 console.log(populations.length === 4 ? true : false);
 
 const percentages = [];
@@ -201,4 +211,16 @@ myCountry.describe();
 
 for (let voter = 1; voter <= 50; voter++) {
   console.log(`Voter number ${voter} is currently voting`);
+}
+
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let j = 0; j < listOfNeighbours[i].length; j++) {
+    console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+  }
 }
