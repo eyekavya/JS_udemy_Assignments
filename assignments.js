@@ -140,6 +140,12 @@ console.log(
 const populations = [1.39, 3, 0.22, 0.5];
 console.log(populations);
 
+const percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]));
+}
+console.log(percentages2);
+
 console.log(populations.length === 4 ? true : false);
 
 const percentages = [];
